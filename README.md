@@ -3,7 +3,6 @@ Goal: Use OMDB Movie Dataset to attempt to predict IMDB Ratings of movies.
 Method: Extract data from OMDB via API, transform the data for preprocessing, and run different Machine Learning models to see if meaningful prediction can occur given the existing data (75% Accuracy or better)
 Definition of “Movie Success”:  One standard deviation above the average IMDB rating, which is a rating of 7.4 out of 10. This puts a “good movie” by our definition in the top 15% of movies by rating. 
 
-
 Parameters In Training Data
 Date
 Genre
@@ -12,11 +11,23 @@ IMDB/MetaCritic/Rotten Tomatoes
 Box Office
 Oscars/Awards
 
-## Quick Summary
+## Installation Instructions
+* Download project files or type `git clone https://github.com/Brendan838/Movie_Prediction.git` in bash/terminal.
+* To view/run Each individual model's script can be found in their respective folders named for each model used. They can be loaded in your code viewer/editor of choice (we used Jupyter Notebook to create these scripts, but other programs such as VSCode also work).
+* The `ETL.ipynb` file shows our work in extracting and cleaning data from the [OMDB API]( https://www.omdbapi.com/). Please note, our first step was extracting IMDB Ids from their [available datasets](https://datasets.imdbws.com/). We have provided this file as a reference, but don't recommend rerunning due to the volume of APIs (will required paid tier). Should you like to re-run, please add the .tsv files in the code to the `Resources` folder from IMDB data set referenced. 
+* `Resources/cleaned.csv` contains our cleaned data that was used in data models. 
+* `Predicting Movie Success Group #4.pdf` contains our google slides presentation summarazing the project and analysis. 
+* `Visualizations/MoviePredictionsAnalysis.twb` is a tableau file containing dataset overview visualizations in it's respective folder. This can be opened in tableau/tableau public on your local machine or in a web browser.
+
+
+## Summary of Files and Directories
 1. **Sam's Tableau**
    * Some parameters our models consider are things like box office revenue, genre, director, IMDB score, etc. To give an overview of our dataset and an idea of potential considerations the models take, we created a tableau file to visualize these considerations to provide a better idea of how they'll work. A example screenshot of the first dashboard in the tableau file can be seen here: ![movie_prediction_vis_preview](https://github.com/user-attachments/assets/a8f1495f-d959-4dbb-a0c6-54c1053f9f76)
 2. **Brendan's Logistic Regression Model**
-
+    * Scikit.learn LogisticRegression model was used on our Resources/Cleaned.csv to predict IMDB ratings of 7.4 or higher with an accuracy of 87.6%. 
+    * Details on process and results can be found in slides 9-12 of `Visualizations/MoviePredictionsAnalysis.twb`
+    * The most accurate updated and accurate model using box office values in this directory is `Logistic Regression/Logistic_Regression Attempt 3.ipynb`
+    
 3. **Mee's Decision Tree Model**
 
 I used Brendan’s “model_data” data frame as we wanted to see and compare how a Decision Tree Model would perform vs the Logistic Regression Model and the K-Nearest Neighbor Model using the same data set. I used the week 20 supervised learning day 2 activity 3 to help me with my model.
@@ -59,7 +70,6 @@ Sample Results:
 •	Accuracy: Overall, the model was correct 75% of the time.
 Evaluating the Model: We check how well the model did with tools like the confusion matrix and classification report. The model works well for predicting negative outcomes, but it struggles with positive ones.
 
-
 5. **Mai Houa's Random Forest Model**
 
 To run the Random Forest classifier model, go to the Random Forest folder and select the Randomforest2025.ipynb file.
@@ -89,7 +99,4 @@ University of Minnesota. (2024). UofM-VIRT-DATA-PT-09-2024-U-LOLC/20-Supervised-
 
 OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed on March 2025. I, Mai Houa Hang, used this website for help with the Randomforest2025.ipynb step 34 (adding hyperparameters to the random forest model), step 35 (help on how to code the cross-validation) and step 38 (for help with the feature importance analysis).
 
-## Installation Instructions
-* Download project files or clone the repository to your local machine.
-* Each individual model's script can be found in their respective folders. They can be loaded in your code viewer/editor of choice (we used Jupyter Notebook to create these scripts, but other programs such as VSCode also work).
-* We have included the tableau file containing dataset overview visualizations in it's respective folder. This can be opened in tableau/tableau public on your local machine or in a web browser.
+
