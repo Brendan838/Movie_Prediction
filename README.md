@@ -39,8 +39,25 @@ This confusion matrix is producing an overall accuracy of 85% but because the pr
 
 
 5. **Susan's KNN Model**
+   
+I used Brendan’s “model_data” data frame as we wanted to see and compare how a K-Nearest Neighbor would perform vs the Logistic Regression Model and the Decision Tree using the same data set. I used the week 20 supervised learning day 2 activity 7 to help me with my model.
 
-6. **Mai Houa's Random Forest Model**
+Scaling the Data:
+•	Simple Explanation: First, I create a tool that will adjust the data to a standard scale (removing any extreme values). Then, I use this tool to scale both our training and testing data.
+Training the Model:
+•	Simple Explanation: I set up the model and train it using the scaled training data. The model learns how to predict what each piece of data belongs to, based on its neighbors.
+Making Predictions:
+•	Simple Explanation: The model now predicts the labels for the test data. It uses the information it learned from the training data to make these predictions.
+Evaluating the Model:
+•	Simple Explanation: The confusion matrix shows how many predictions were correct and how many were wrong. The classification report gives us more details, like how many positive and negative predictions were correct.
+Sample Results:
+•	False (Negative) Predictions: The model was good at predicting negatives (82% precision and 88% recall).
+•	True (Positive) Predictions: The model was not as good at predicting positives (30% precision and 21% recall).
+•	Accuracy: Overall, the model was correct 75% of the time.
+Evaluating the Model: We check how well the model did with tools like the confusion matrix and classification report. The model works well for predicting negative outcomes, but it struggles with positive ones.
+
+
+7. **Mai Houa's Random Forest Model**
    
 ## Data Sources
 OMDb API. OMDb API. OMDb API, www.omdbapi.com/. Accessed 17 Mar. 2025. Accessed 18 Mar. 2025. Accessed 20 Mar. 2025. Accessed 22 Mar. 2025
@@ -48,6 +65,10 @@ OMDb API. OMDb API. OMDb API, www.omdbapi.com/. Accessed 17 Mar. 2025. Accessed 
 Mee's resoucse for Decision Tree
 
 Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Day 2 Activity 3. Data Science Course, Week 20, Day 2, Activity 3. UofM University, 25 Mar. 2025.
+
+Susan's resources for K-Nearest Neighbor
+Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Day 2 Activity 7. Data Science Course, Week 20, Day 2, Activity 7. UofM University, 25 Mar. 2025.
+
 ## Installation Instructions
 * Download project files or clone the repository to your local machine.
 * Each individual model's script can be found in their respective folders. They can be loaded in your code viewer/editor of choice (we used Jupyter Notebook to create these scripts, but other programs such as VSCode also work).
