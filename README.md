@@ -72,6 +72,10 @@ Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Da
 Susan's resources for K-Nearest Neighbor
 Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Day 2 Activity 7. Data Science Course, Week 20, Day 2, Activity 7. UofM University, 25 Mar. 2025.
 
+University of Minnesota. (2024). UofM-VIRT-DATA-PT-09-2024-U-LOLC/20-Supervised-Learning/2/Activities/05-Ins_Random_Forest [GitHub repository]. Accessed on March 2025. I, Mai Houa Hang, used this repository for help with the Randomforest2025.ipynb on how to use the Random Forest classifer.
+
+OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed on March 2025. I, Mai Houa Hang, used this website for help with the Randomforest2025.ipynb step 35 and 38 for help to do a cross-validation and the feature importance analysis.
+
 ## Installation Instructions
 * Download project files or clone the repository to your local machine.
 * Each individual model's script can be found in their respective folders. They can be loaded in your code viewer/editor of choice (we used Jupyter Notebook to create these scripts, but other programs such as VSCode also work).
