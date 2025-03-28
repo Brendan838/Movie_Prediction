@@ -38,7 +38,7 @@ Conclusion for Decision Tree
 This confusion matrix is producing an overall accuracy of 85% but because the precision for false positives is 90% and the recall for false negatives is 92%, which is higher than the true precision and recall percentages, I conclude that the decision tree model suggests that the model’s performance is unbalanced favoring False. So it mirrors Brandon’s results.
 
 
-5. **Susan's KNN Model**
+4. **Susan's KNN Model**
    
 I used Brendan’s “model_data” data frame as we wanted to see and compare how a K-Nearest Neighbor would perform vs the Logistic Regression Model and the Decision Tree using the same data set. I used the week 20 supervised learning day 2 activity 7 to help me with my model.
 
@@ -60,7 +60,7 @@ Sample Results:
 Evaluating the Model: We check how well the model did with tools like the confusion matrix and classification report. The model works well for predicting negative outcomes, but it struggles with positive ones.
 
 
-7. **Mai Houa's Random Forest Model**
+5. **Mai Houa's Random Forest Model**
 
 To run the Random Forest classifier model, go to the Random Forest folder and select the Randomforest2025.ipynb file.
 
