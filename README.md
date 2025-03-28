@@ -42,14 +42,17 @@ This confusion matrix is producing an overall accuracy of 85% but because the pr
    
 I used Brendan’s “model_data” data frame as we wanted to see and compare how a K-Nearest Neighbor would perform vs the Logistic Regression Model and the Decision Tree using the same data set. I used the week 20 supervised learning day 2 activity 7 to help me with my model.
 
-Scaling the Data:
+Steps 
+
+1. Scaling the Data:
 •	Simple Explanation: First, I create a tool that will adjust the data to a standard scale (removing any extreme values). Then, I use this tool to scale both our training and testing data.
-Training the Model:
+2. Training the Model:
 •	Simple Explanation: I set up the model and train it using the scaled training data. The model learns how to predict what each piece of data belongs to, based on its neighbors.
-Making Predictions:
+3. Making Predictions:
 •	Simple Explanation: The model now predicts the labels for the test data. It uses the information it learned from the training data to make these predictions.
-Evaluating the Model:
+4. Evaluating the Model:
 •	Simple Explanation: The confusion matrix shows how many predictions were correct and how many were wrong. The classification report gives us more details, like how many positive and negative predictions were correct.
+
 Sample Results:
 •	False (Negative) Predictions: The model was good at predicting negatives (82% precision and 88% recall).
 •	True (Positive) Predictions: The model was not as good at predicting positives (30% precision and 21% recall).
