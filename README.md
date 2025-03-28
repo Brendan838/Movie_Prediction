@@ -64,11 +64,11 @@ Evaluating the Model: We check how well the model did with tools like the confus
 
 To run the Random Forest classifier model, go to the Random Forest folder and select the Randomforest2025.ipynb file.
 
-To create this model, I load the dataset from the Resources folder’s Cleaned.csv file and convert date columns to a datetime format. I then converted categorical data, like the director, actors, and genres, to dummy variables. I also filled in the missing values and perform data cleaning, including dropping columns and transforming columns to numerical values.
+To create this model, I load the dataset from the Resources folder’s Cleaned.csv file and convert date columns to a datetime format. I then converted categorical data, like the director, actors, and genres, to dummy variables. I perform data cleaning such as filling in the missing values, dropping columns, and transforming columns to numerical values.
 
-For this model, I defined the target variable, “Success”, based on Rotten Tomatoes score of 70 or higher to equal “Success”. I split the dataset into training and testing sets based on movie release year. Movies before 2025 for training and movies in 2025 were for testing. I then defined a Random Forest model with specific hyperparameters to prevent overfitting.
+For this model, I decided to use the Rotten Tomatoes score to define success. So, a movie with a score of 70% or higher is considered a success (1), and anything below that is a failure (0). I split the dataset into training and testing sets based on movie release year. Movies released before 2025 were for training and movies released in 2025 were for testing. I then defined a Random Forest model with hyperparameters to prevent overfitting.
 
-To test the model, I performed a cross-validation. What it does is it perform 5-fold cross-validation to estimate model performance, achieving an accuracy of 90.67% with low variance (± 0.0049). I then trained the model using the training data. And evaluated the model on the test set, displaying the confusion matrix, accuracy, and a classification report, which shows performance metrics like precision, recall, and F1-score. As I was curious which columns helped to identify if a movie was considered successful or not, I used the feature importances attribute to analyze and display the top 10 most important features for the model's predictions.
+To test the model, I performed a cross-validation to estimate model performance. It achieved an accuracy of 90.67% with low variance (± 0.0049). I then trained the model using the training data. And evaluated the model on the test set, displaying the confusion matrix, accuracy, and a classification report, which shows performance metrics like precision, recall, and F1-score. As I was curious which columns helped to identify if a movie was considered successful or not, I used the feature importances attribute to analyze and display the top 10 most important features for the model's predictions.
 
 Lastly, I created a DataFrame linking movie titles with the model's predictions for success.
 
@@ -87,7 +87,7 @@ Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Da
 
 University of Minnesota. (2024). UofM-VIRT-DATA-PT-09-2024-U-LOLC/20-Supervised-Learning/2/Activities/05-Ins_Random_Forest [GitHub repository]. Accessed on March 2025. I, Mai Houa Hang, used this repository for help with the Randomforest2025.ipynb on how to use the Random Forest classifer.
 
-OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed on March 2025. I, Mai Houa Hang, used this website for help with the Randomforest2025.ipynb step 35 and 38 for help to do a cross-validation and the feature importance analysis.
+OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. Accessed on March 2025. I, Mai Houa Hang, used this website for help with the Randomforest2025.ipynb step 34 (adding hyperparameters to the random forest model), step 35 (help on how to code the cross-validation) and step 38 (for help with the feature importance analysis).
 
 ## Installation Instructions
 * Download project files or clone the repository to your local machine.
