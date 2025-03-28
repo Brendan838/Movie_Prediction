@@ -14,7 +14,7 @@ Oscars/Awards
 
 ## Quick Summary
 1. **Sam's Tableau**
-   * Some big parameters our models consider are things like box office revenue, genre, director, IMDB score, etc. To give an overview of our dataset and an idea of potential considerations the models take, we created a tableau file to visualize these considerations to provide a better idea of how they'll work. A example screenshot of the first dashboard in the tableau file can be seen here: ![movie_prediction_vis_preview](https://github.com/user-attachments/assets/a8f1495f-d959-4dbb-a0c6-54c1053f9f76)
+   * Some parameters our models consider are things like box office revenue, genre, director, IMDB score, etc. To give an overview of our dataset and an idea of potential considerations the models take, we created a tableau file to visualize these considerations to provide a better idea of how they'll work. A example screenshot of the first dashboard in the tableau file can be seen here: ![movie_prediction_vis_preview](https://github.com/user-attachments/assets/a8f1495f-d959-4dbb-a0c6-54c1053f9f76)
 2. **Brendaon's Logistic Regression Model**
 
 3. **Mee's Decision Tree Model**
