@@ -1,8 +1,7 @@
 ## Project Overview
-Predict Box Office and Rotten Tomatoes score using OMDB  movie data.
-Scope:
-Movie Data Only (No TV Shows)
-United States Movies Only
+Goal: Use OMDB Movie Dataset to attempt to predict IMDB Ratings of movies. 
+Method: Extract data from OMDB via API, transform the data for preprocessing, and run different Machine Learning models to see if meaningful prediction can occur given the existing data (75% Accuracy or better)
+Definition of “Movie Success”:  One standard deviation above the average IMDB rating, which is a rating of 7.4 out of 10. This puts a “good movie” by our definition in the top 15% of movies by rating. 
 
 
 Parameters In Training Data
@@ -22,6 +21,7 @@ Oscars/Awards
 I used Brendan’s “model_data” data frame as we wanted to see and compare how a Decision Tree Model would perform vs the Logistic Regression Model and the K-Nearest Neighbor Model using the same data set. I used the week 20 supervised learning day 2 activity 3 to help me with my model.
 
 Steps
+
 I imported the libraries needed for the decision tree 
 Created the standard StandardScaler instance
 Fit Standard Scalar
@@ -39,10 +39,11 @@ This confusion matrix is producing an overall accuracy of 85% but because the pr
 
 5. **Susan's KNN Model**
 
-6. **Mai Houa's Random Forest**
+6. **Mai Houa's Random Forest Model**
    
 ## Data Sources
 OMDb API. OMDb API. OMDb API, www.omdbapi.com/. Accessed 17 Mar. 2025. Accessed 18 Mar. 2025. Accessed 20 Mar. 2025. Accessed 22 Mar. 2025
+
 Mee's resoucse for Decision Tree
 Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Day 2 Activity 3. Data Science Course, Week 20, Day 2, Activity 3. UofM University, 25 Mar. 2025.
 ## Installation Instructions
