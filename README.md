@@ -1,9 +1,50 @@
 ## Project Overview
+Predict Box Office and Rotten Tomatoes score using OMDB  movie data.
+Scope:
+Movie Data Only (No TV Shows)
+United States Movies Only
+
+
+Parameters In Training Data
+Date
+Genre
+Actors/Actresses
+IMDB/MetaCritic/Rotten Tomatoes
+Box Office
+Oscars/Awards
 
 ## Quick Summary
+1. **Sam's Tableau**
+   
+2. **Brendaon's Logistic Regression Model**
 
+3. **Mee's Decision Tree Model**
+I used Brendan’s “model_data” data frame as we wanted to see and compare how a Decision Tree Model would perform vs the Logistic Regression Model and the K-Nearest Neighbor Model using the same data set. I used the week 20 supervised learning day 2 activity 3 to help me with my model.
+
+Steps
+I imported the libraries needed for the decision tree 
+Created the standard StandardScaler instance
+Fit Standard Scalar
+Scaling the data
+Created the decision tree classifier instance
+Fit the model
+Make predictions using the testing data
+Calculate the confusion matrix
+And then displayed the results
+
+Conclusion for Decision Tree
+
+This confusion matrix is producing an overall accuracy of 85% but because the precision for false positives is 90% and the recall for false negatives is 92%, which is higher than the true precision and recall percentages, I conclude that the decision tree model suggests that the model’s performance is unbalanced favoring False. So it mirrors Brandon’s results.
+
+
+5. **Susan's KNN Model**
+
+6. **Mai Houa's Random Forest**
+   
 ## Data Sources
-
+OMDb API. OMDb API. OMDb API, www.omdbapi.com/. Accessed 17 Mar. 2025. Accessed 18 Mar. 2025. Accessed 20 Mar. 2025. Accessed 22 Mar. 2025
+Mee's resoucse for Decision Tree
+Bootcamp:UofM-VIRT-DATA-PT-09-2024-U-LOLC-MTTH. Supervised Learning, Week 20: Day 2 Activity 3. Data Science Course, Week 20, Day 2, Activity 3. UofM University, 25 Mar. 2025.
 ## Installation Instructions
 * Download project files or clone the repository to your local machine.
 * Each individual model's script can be found in their respective folders. They can be loaded in your code viewer/editor of choice (we used Jupyter Notebook to create these scripts, but other programs such as VSCode also work).
