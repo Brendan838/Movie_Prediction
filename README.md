@@ -68,7 +68,7 @@ To create this model, I load the dataset from the Resources folder’s Cleaned.c
 
 For this model, I decided to use the Rotten Tomatoes score to define success. So, a movie with a score of 70% or higher is considered a success (1), and anything below that is a failure (0). I split the dataset into training and testing sets based on movie release year. Movies released before 2025 were for training and movies released in 2025 were for testing. I then defined a Random Forest model with hyperparameters to prevent overfitting.
 
-To test the model, I performed a cross-validation to estimate model performance. It achieved an accuracy of 90.67% with low variance (± 0.0049). I then trained the model using the training data. And evaluated the model on the test set, displaying the confusion matrix, accuracy, and a classification report, which shows performance metrics like precision, recall, and F1-score. As I was curious which columns helped to identify if a movie was considered successful or not, I used the feature importances attribute to analyze and display the top 10 most important features for the model's predictions.
+To test the model, I performed a cross-validation to estimate the model performance. It achieved an accuracy of 90.67% with low variance of ± 0.0049. I then trained the model using the training data and evaluated the model on the test data displaying the confusion matrix, accuracy, and a classification report. As I was curious which columns helped to identify if a movie was considered successful or not, I used the feature importances attribute to analyze and display the top 10 most important features for the model's predictions.
 
 Lastly, I created a DataFrame linking movie titles with the model's predictions for success.
 
