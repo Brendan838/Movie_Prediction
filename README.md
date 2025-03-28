@@ -18,6 +18,7 @@ Oscars/Awards
 2. **Brendaon's Logistic Regression Model**
 
 3. **Mee's Decision Tree Model**
+
 I used Brendan’s “model_data” data frame as we wanted to see and compare how a Decision Tree Model would perform vs the Logistic Regression Model and the K-Nearest Neighbor Model using the same data set. I used the week 20 supervised learning day 2 activity 3 to help me with my model.
 
 Steps
