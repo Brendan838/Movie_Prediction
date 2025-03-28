@@ -17,7 +17,7 @@ Oscars/Awards
 * The `ETL.ipynb` file shows our work in extracting and cleaning data from the [OMDB API]( https://www.omdbapi.com/). Please note, our first step was extracting IMDB Ids from their [available datasets](https://datasets.imdbws.com/). We have provided this file as a reference, but don't recommend rerunning due to the volume of APIs (will required paid tier). Should you like to re-run, please add the .tsv files in the code to the `Resources` folder from IMDB data set referenced. 
 * `Resources/cleaned.csv` contains our cleaned data that was used in data models. 
 * `Predicting Movie Success Group #4.pdf` contains our google slides presentation summarazing the project and analysis. 
-* `Visualizations/MoviePredictionsAnalysis.twb` is a tableau file containing dataset overview visualizations in it's respective folder. This can be opened in tableau/tableau public on your local machine or in a web browser.
+* `Visualizations/MoviePredictionsAnalysis.twb` contains a tableau visualization of our cleaned dataset. This can be opened in tableau/tableau public on your local machine or in a web browser.
 
 
 ## Summary of Files and Directories
