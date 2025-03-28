@@ -23,15 +23,15 @@ I used Brendan’s “model_data” data frame as we wanted to see and compare h
 
 Steps
 
-I imported the libraries needed for the decision tree 
-Created the standard StandardScaler instance
-Fit Standard Scalar
-Scaling the data
-Created the decision tree classifier instance
-Fit the model
-Make predictions using the testing data
-Calculate the confusion matrix
-And then displayed the results
+1. I imported the libraries needed for the decision tree 
+2. Created the standard StandardScaler instance
+3. Fit Standard Scalar
+4. Scaling the data
+5. Created the decision tree classifier instance
+6. Fit the model
+7. Make predictions using the testing data
+8. Calculate the confusion matrix
+9. And then displayed the results
 
 Conclusion for Decision Tree
 
