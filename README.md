@@ -61,6 +61,16 @@ Evaluating the Model: We check how well the model did with tools like the confus
 
 
 7. **Mai Houa's Random Forest Model**
+
+To run the Random Forest classifier model, go to the Random Forest folder and select the Randomforest2025.ipynb file.
+
+To create this model, I load the dataset from the Resources folder’s Cleaned.csv file and convert date columns to a datetime format. I then converted categorical data, like the director, actors, and genres, to dummy variables. I also filled in the missing values and perform data cleaning, including dropping columns and transforming columns to numerical values.
+
+For this model, I defined the target variable, “Success”, based on Rotten Tomatoes score of 70 or higher to equal “Success”. I split the dataset into training and testing sets based on movie release year. Movies before 2025 for training and movies in 2025 were for testing. I then defined a Random Forest model with specific hyperparameters to prevent overfitting.
+
+To test the model, I performed a cross-validation. What it does is it perform 5-fold cross-validation to estimate model performance, achieving an accuracy of 90.67% with low variance (± 0.0049). I then trained the model using the training data. And evaluated the model on the test set, displaying the confusion matrix, accuracy, and a classification report, which shows performance metrics like precision, recall, and F1-score. As I was curious which columns helped to identify if a movie was considered successful or not, I used the feature importances attribute to analyze and display the top 10 most important features for the model's predictions.
+
+Lastly, I created a DataFrame linking movie titles with the model's predictions for success.
    
 ## Data Sources
 OMDb API. OMDb API. OMDb API, www.omdbapi.com/. Accessed 17 Mar. 2025. Accessed 18 Mar. 2025. Accessed 20 Mar. 2025. Accessed 22 Mar. 2025
