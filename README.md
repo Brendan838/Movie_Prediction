@@ -71,6 +71,9 @@ For this model, I defined the target variable, “Success”, based on Rotten To
 To test the model, I performed a cross-validation. What it does is it perform 5-fold cross-validation to estimate model performance, achieving an accuracy of 90.67% with low variance (± 0.0049). I then trained the model using the training data. And evaluated the model on the test set, displaying the confusion matrix, accuracy, and a classification report, which shows performance metrics like precision, recall, and F1-score. As I was curious which columns helped to identify if a movie was considered successful or not, I used the feature importances attribute to analyze and display the top 10 most important features for the model's predictions.
 
 Lastly, I created a DataFrame linking movie titles with the model's predictions for success.
+
+Outcome:
+The classification report indicates that the model performs well in predicting movie success with an overall accuracy of 82%. For not successful movies (class 0), it has a high precision of 91%, meaning it correctly identifies most movies as not successful when it predicts that. For successful movies (class 1), the model has a 70% precision and 86% recall, meaning it is a bit less accurate in predicting successful movies, but it does a good job of identifying most of them.
    
 ## Data Sources
 OMDb API. OMDb API. OMDb API, www.omdbapi.com/. Accessed 17 Mar. 2025. Accessed 18 Mar. 2025. Accessed 20 Mar. 2025. Accessed 22 Mar. 2025
